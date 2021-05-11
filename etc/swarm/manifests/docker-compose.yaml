@@ -1,1 +1,7 @@
 # Hola
+services:
+  anagrams:
+    image: chemagonzalez/ibm-anagrams:latest
+    volumes:
+      - /tmp/ibm-anagrams/data:/data:ro
+version: '3.8'
