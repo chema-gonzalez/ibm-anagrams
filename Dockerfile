@@ -1,6 +1,5 @@
-FROM python@sha256:18aba152414e993ae52ccd930333f9b4a4e8cbc8c50a17cb47763c8a1faa4e03            # Dependencia                 
+FROM python@sha256:18aba152414e993ae52ccd930333f9b4a4e8cbc8c50a17cb47763c8a1faa4e03                            
 WORKDIR /app         
 COPY src/anagrams.py /app
-# comentario
 CMD python anagrams.py
 VOLUME /data
