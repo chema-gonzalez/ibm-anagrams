@@ -9,7 +9,7 @@ jobs:
     steps:
       - run: |
           set -x
-          ggit clone https://github.com/chema-gonzalez/ibm-anagrams.git
+          git clone https://github.com/chema-gonzalez/ibm-anagrams.git
           docker build --tag ibm-anagrams:test ibm-anagrams/
           docker run --name prueba1 --volume ${PWD}/ibm-anagrams/data:/data ibm-anagrams:test
           while true;do sleep 10
